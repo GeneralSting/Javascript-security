@@ -1,0 +1,26 @@
+/*
+1.  npm install eslint --saveDev
+2.  ./node_modules / .bin / eslint--init
+3.  ./node_modules / .bin / eslint lib /**.js 
+...
+Searching for errors
+*/
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    // "extends": "eslint:recommended",
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        // added rules
+        "no-eval": "error",
+        "no-implied-eval": "error",
+        "no-new-func": "error"
+    }
+}
